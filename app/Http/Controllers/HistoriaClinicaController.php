@@ -17,7 +17,7 @@ class HistoriaClinicaController extends Controller
                 ->where('citas.cit_id','=',$id)
                 ->first();
         $cie10 = DB::table('cie10')->get();
-        return view('hclinica.create',['cita'=>$data,'cie10'=>$cie10]);
+        return view('tesis.create',['cita'=>$data,'cie10'=>$cie10]);
     }
 
     public function index(Request $request)
@@ -29,7 +29,7 @@ class HistoriaClinicaController extends Controller
                   ->join('pacientes','pacientes.pac_id','citas.cit_idpaciente')
                   ->join('empleados','empleados.emp_id','citas.cit_idempleado')
                   ->get();
-        return view('hclinica.index',['historiasclinicas'=>$data]);
+        return view('tesis.index',['historiasclinicas'=>$data]);
     }
 
     public function store(Request $request)
@@ -122,7 +122,7 @@ class HistoriaClinicaController extends Controller
                   ->join('empleados','empleados.emp_id','citas.cit_idempleado')
                   ->where('historiasclinicas.hc_id','=',$id)
                   ->get();
-        $pdf = PDF::loadView('hclinica.pdf',['historiasclinicas'=>$data])->setPaper('a4','portrait');
+        $pdf = PDF::loadView('tesis.pdf',['historiasclinicas'=>$data])->setPaper('a4','portrait');
         return $pdf->stream('ReporteHC.pdf');
     }
 

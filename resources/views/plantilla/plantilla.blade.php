@@ -70,7 +70,7 @@
 
                 <!-- Nav Item - Charts -->
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('cita')}}">
+                    <a class="nav-link" href="{{url('tesis')}}">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Registros</span></a>
                 </li>

@@ -24,7 +24,7 @@ Route::resource('paciente','PacienteController')->middleware('auth');
 Route::resource('cita','CitaController')->middleware('auth');
 Route::resource('recep','RecepcionistaController')->middleware('auth');
 Route::resource('medico','MedicoController')->middleware('auth');
-Route::resource('historiaclinica','HistoriaClinicaController')->middleware('auth');
+Route::resource('tesis','HistoriaClinicaController')->middleware('auth');
 Route::resource('empleado','EmpleadoController')->middleware('auth');
 
 //Ruta para ver HC recibiendo paciente
