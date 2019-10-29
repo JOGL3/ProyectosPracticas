@@ -3,7 +3,7 @@
 <div class="mb-4">
     <div class="row">
         <div class="col-xl-6">
-            <h3>Editar Empleados</h3>
+            <h3>Editar Personal</h3>
         </div>
         <div class="col-xl-6">
             @if (session('status'))
@@ -20,7 +20,7 @@
     <div class="row">
         <div class="col-xl-2 col-md-6">
             <div class="form-group">
-                <label for="">DNI *</label>
+                <label for="">Codigo Personal *</label>
                 <input type="text" name="emp_dni" id="txtdni" class="form-control" required maxlength="8" minlength="8" value="{{$emp->emp_dni}}" readonly>
             </div>
         </div>
