@@ -31,7 +31,7 @@ Route::resource('empleado','EmpleadoController')->middleware('auth');
 Route::get('hc/{id}','PacienteController@buscarhc')->middleware('auth');
 
 //Ruta para ver PDF de HC
-Route::get('hclinica/pdf/{id}','HistoriaClinicaController@imprimirhc')->middleware('auth');
+Route::get('tesis/pdf/{id}','HistoriaClinicaController@imprimirhc')->middleware('auth');
 
 //Ruta para crear HC recibiendo cita médica
 Route::get('newhistoriaclinica/{id}','HistoriaClinicaController@recibircita')->middleware('auth');

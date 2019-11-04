@@ -133,7 +133,7 @@ class PacienteController extends Controller
         $paciente = DB::table('pacientes')
                     ->where('pacientes.pac_id','=',$id)
                     ->first();
-      $pdf = PDF::loadView('hclinica.pdf',['historiasclinicas'=>$data])->setPaper('a4','portrait');
+      $pdf = PDF::loadView('tesis.pdf',['historiasclinicas'=>$data])->setPaper('a4','portrait');
       return $pdf->stream('ReporteHC.pdf');
     }
 
