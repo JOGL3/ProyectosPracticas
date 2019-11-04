@@ -77,7 +77,7 @@
                 <hr class="sidebar-divider">
                 <!-- Nav Item - Charts -->
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('')}}">
+                    <a class="nav-link" href="{{url('proce')}}">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Calidad de Procedimientos</span></a>
                 </li>
