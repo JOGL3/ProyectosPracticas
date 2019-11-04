@@ -88,7 +88,7 @@
                     <i class="fas fa-fw fa-table"></i>
                     <span>Calidad de Investigación</span></a>
                 </li>
-               >
+               
                 <!-- Divider -->
                 <hr class="sidebar-divider">
 
