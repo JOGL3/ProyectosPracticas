@@ -2,7 +2,9 @@
 @section('contenido')
 <div class="mb-4">
     <div class="row">
-        <div class="col-xl-6"></div>
+        <div class="col-xl-6">
+            <a href="{{url('proce/create')}}" class="btn btn-primary">Registrar Procedimiento</a>
+        </div>
         <div class="col-xl-6">
             @if (session('status'))
             <div class="alert alert-success">
@@ -26,6 +28,15 @@
                     <th>Opciones</th>
                 </thead>
                 <tbody>
+                   <td>0</td>
+                   <td>0</td>
+                   <td>0</td>
+                   <td>
+                           
+                            <a href="" class="btn btn-warning btn-sm">Editar</a>
+                            <a data-toggle="modal" data-target="" class="btn btn-danger btn-sm" href="">Eliminar</a>
+                            
+                   </td>
                 
                 </tbody>
             </table>
